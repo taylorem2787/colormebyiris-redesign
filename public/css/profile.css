@@ -1,0 +1,208 @@
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    overflow: auto;
+    line-height: 25px;
+    background-color: black;
+}
+
+* {
+	position: relative;
+	box-sizing: border-box;
+}
+
+.nav-wrapper {
+	border-bottom-color: 2px solid snow;
+	transition: background-color ease 0.2s;
+}
+
+nav, footer, .btn-large, .btn, {
+	background-color: turquoise;
+    background-color: rgba(255,255,255,0.5);
+    font-family: "Futura W01 Book", georgia, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer p {
+	text-transform: lowercase;
+}
+
+nav .brand-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav img {
+	width: 100%;
+}
+
+#navbar {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+	width: 100%;
+	height: 60px;
+}
+
+/*Window in navbar that displays the user's color profile*/
+.color-window {
+	background-color: rgba(255, 0, 0, 0.0);
+}
+
+footer.page-footer {
+    margin-top: 0px;
+    background: turquoise; !important;
+}
+
+.container-profile {
+	min-height: 1000px;
+	color: white;
+	column-count: 3;
+	line-height: 2;
+	width: 95%;
+	margin: 20px auto;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+    border: white solid 15px;
+    padding: 10px auto;
+}
+
+.profile {
+	margin: 5px auto;
+}
+
+.container-rgb {
+	width: 95%;
+	margin: 20px auto;
+}
+
+.rgb-image {
+	margin: 10px auto;
+	border: 2px solid white;
+}
+
+.nav-extended {
+	/*background-image: url(../img/nav.png) !important;*/
+	background-size: cover;
+	clear: both;
+	background-color: white;
+}
+
+nav .brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+#settings {
+	width: 400px;
+	min-height: 500px;
+	margin: auto;
+}
+
+#settings2 {
+	background-color: black !important;
+	margin: auto;
+}
+
+#color-profile-slider {
+	max-width: 400px;
+	margin: auto;
+}
+
+#slider-text {
+	color: white;
+	text-align: center;
+	font-family: "Futura W01 Book", georgia, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+}
+
+#resetBtn {
+	margin: auto;
+	max-width: 250px;
+}
+
+.parallax-img img {
+	position: absolute;
+	background-position: 50% 210px !important;
+	width: 100%;
+	height: auto !important;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.parallax-container {
+      height: 380px;
+}
+
+/* Profile Images */
+
+.profile-img {
+	display: inline-block;
+	vertical-align: top;
+	margin: 2px;
+	width: 100%;
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    line-height: 0;
+}
+
+.profile-img img {
+	width: 100%;
+	margin: 0;
+}
+
+.row .col {
+	padding: 0;
+}
+
+.profile-img__overlay {
+	opacity: 0;
+ 	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity ease 0.2s;
+}
+
+.profile-img:hover .profile-img__overlay {
+    opacity: 1;
+}
+
+.profile-img__overlay__delete {
+	background-image: url("../img/delete.svg"); 
+	background-size: 100% 100%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 15%;
+	width: 15%;
+	min-height: 20px;
+	min-width: 20px;
+	cursor: pointer;
+}
+
+
+
+
